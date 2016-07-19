@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     cssmin = require('gulp-cssmin'),
-    cmq = require('gulp-combine-media-queries');
+    cmq = require('gulp-group-css-media-queries');
 	
 gulp.task('bundle-minify-js', function () {
   return gulp.src(['assets/js/*.js', '!assets/js/app.js'])
